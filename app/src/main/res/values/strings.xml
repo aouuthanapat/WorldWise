@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">WorldWise</string>
+    <string name="app_name">POLUS</string>
+
+    <string name="common__action_continue">Продолжить</string>
+
+    <string name="welcome_news__skip">Пропустить</string>
+    <string name="welcome_news__useful_news">Полезные новости</string>
+    <string name="welcome_news__about_news">Узнавайте новости о странах, необходимые\n документы, страховка, визы, валюта</string>
+    <string name="welcome_news__action_continue">@string/common__action_continue</string>
+
+    <string name="welcome_translate__translator">Переводчик</string>
+    <string name="welcome_translate__about_translator">Забудьте о языковом барьере в общении</string>
+    <string name="welcome_translate__action_continue">@string/common__action_continue</string>
+
+    <string name="welcome_map__title">Карта ближайших мест</string>
+    <string name="welcome_map__about_map">Исследуйте свое окружение и найдите скрытые\n сокровища с нашей  интерактивной картой\n местных достопримечательностей</string>
+    <string name="welcome_map__action_start">Начать сейчас</string>
 </resources>

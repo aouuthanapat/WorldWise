@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "605522977129",
+    "project_id": "worldwise-3bcb5",
+    "storage_bucket": "worldwise-3bcb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605522977129:android:8dc6296a563d097eee1df8",
+        "android_client_info": {
+          "package_name": "com.example.worldwise"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBZijYXQlUTMd6PZsmK2ka2l418CcuCdo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_welcome"
+    app:startDestination="@id/welcomeNewsScreen">
+
+    <fragment
+        android:id="@+id/welcomeNewsScreen"
+        android:name="com.example.worldwise.presentation.screens.welcome.WelcomeNewsScreen"
+        android:label="fragment_welcome_news_screen"
+        tools:layout="@layout/fragment_welcome_news_screen" >
+        <action
+            android:id="@+id/action_welcomeNewsScreen_to_welcomeTranslateScreen"
+            app:destination="@id/welcomeTranslateScreen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeTranslateScreen"
+        android:name="com.example.worldwise.presentation.screens.welcome.WelcomeTranslateScreen"
+        android:label="fragment_welcome_translate_screen"
+        tools:layout="@layout/fragment_welcome_translate_screen" >
+        <action
+            android:id="@+id/action_welcomeTranslateScreen_to_welcomeMapScreen"
+            app:destination="@id/welcomeMapScreen"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeMapScreen"
+        android:name="com.example.worldwise.presentation.screens.welcome.WelcomeMapScreen"
+        android:label="fragment_welcome_map_screen"
+        tools:layout="@layout/fragment_welcome_map_screen" />
+</navigation>
