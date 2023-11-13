@@ -10,4 +10,29 @@
         <item name="backgroundTint">@color/colorSecondary</item>
         <item name="cornerRadius">18dp</item>
     </style>
+
+    <style name="SignUpEditTextStyle">
+        <item name="android:fontFamily">@font/just_sans_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:ems">20</item>
+        <item name="backgroundTint">@color/colorSecondary</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+        <item name="hintTextColor">@color/grayText</item>
+    </style>
+
+    <style name="SignUpErrorTextStyle">
+        <item name="android:fontFamily">@font/just_sans_regular</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/errorText</item>
+    </style>
+
+    <style name="SignUpRadioTextStyle">
+        <item name="android:fontFamily">@font/just_sans_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/colorSecondary</item>
+    </style>
+
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/text_input_box_stroke</item>
+    </style>
 </resources>

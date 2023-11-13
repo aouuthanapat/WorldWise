@@ -5,4 +5,8 @@
 
     <color name="colorPrimary">#212322</color>
     <color name="colorSecondary">#F4F6F5</color>
+    <color name="grayText">#AAAAAA</color>
+    <color name="errorText">#DB0808</color>
+
+    <color name="mtrl_textinput_default_box_stroke_color">#F4F6F5</color>
 </resources>

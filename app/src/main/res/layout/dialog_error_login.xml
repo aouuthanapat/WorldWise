@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/error_login_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="@string/error_login__error_text"
+        android:textColor="@color/colorSecondary"
+        android:textSize="16sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_ok"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:paddingHorizontal="60dp"
+        android:text="@string/error_login__ok"
+        android:gravity="center"
+        android:textColor="@color/colorSecondary"
+        android:textSize="16sp"
+        app:cornerRadius="16dp"
+        app:strokeColor="@color/colorSecondary"
+        app:strokeWidth="2dp" />
+
+</LinearLayout>

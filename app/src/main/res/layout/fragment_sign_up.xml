@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".presentation.screens.authorization.signUp.SignUpScreen">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/tee"
+        android:text="@string/sign_up__registration_form"
+        android:textColor="@color/colorSecondary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edit_name"
+        style="@style/SignUpEditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="@string/sign_up__name_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title" />
+
+    <TextView
+        android:id="@+id/error_name"
+        style="@style/SignUpErrorTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/sign_up__name_error"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/edit_name"
+        app:layout_constraintTop_toBottomOf="@id/edit_name" />
+
+    <EditText
+        android:id="@+id/edit_surname"
+        style="@style/SignUpEditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/sign_up__surname_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/error_name" />
+
+    <TextView
+        android:id="@+id/error_surname"
+        style="@style/SignUpErrorTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up__surname_error"
+        android:textColor="@color/errorText"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/error_name"
+        app:layout_constraintTop_toBottomOf="@id/edit_surname" />
+
+
+    <EditText
+        android:id="@+id/edit_email"
+        style="@style/SignUpEditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/sign_up__email_hint"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_surname" />
+
+    <TextView
+        android:id="@+id/error_email"
+        style="@style/SignUpErrorTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up__email_error"
+        android:textColor="@color/errorText"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/error_name"
+        app:layout_constraintTop_toBottomOf="@id/edit_email" />
+
+
+    <EditText
+        android:id="@+id/edit_number"
+        style="@style/SignUpEditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/sign_up__number_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_email" />
+
+    <TextView
+        android:id="@+id/error_number"
+        style="@style/SignUpErrorTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up__number_error"
+        android:textColor="@color/errorText"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/error_name"
+        app:layout_constraintTop_toBottomOf="@id/edit_number" />
+
+
+    <EditText
+        android:id="@+id/edit_nickname"
+        style="@style/SignUpEditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/sign_up__nickname_hint"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_number" />
+
+    <TextView
+        android:id="@+id/error_nickname"
+        style="@style/SignUpErrorTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up__nickname_error"
+        android:textColor="@color/errorText"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/error_name"
+        app:layout_constraintTop_toBottomOf="@id/edit_nickname" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        style="@style/SignUpEditTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/sign_up__password_hint"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/error_nickname" />
+
+    <TextView
+        android:id="@+id/error_password"
+        style="@style/SignUpErrorTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up__password_error"
+        android:textColor="@color/errorText"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/error_name"
+        app:layout_constraintTop_toBottomOf="@id/edit_password" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/privacy_radio_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:buttonTint="@color/colorSecondary"
+        android:foregroundTint="@color/colorSecondary"
+        app:layout_constraintStart_toStartOf="@id/edit_password"
+        app:layout_constraintTop_toBottomOf="@id/error_password" />
+
+    <TextView
+        android:id="@+id/privacy_info_first"
+        style="@style/SignUpRadioTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up__privacy_info_first"
+        app:layout_constraintStart_toEndOf="@+id/privacy_radio_action"
+        app:layout_constraintTop_toTopOf="@id/privacy_radio_action" />
+
+    <TextView
+        android:id="@+id/privacy_info_second"
+        style="@style/SignUpRadioTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up__privacy_info_second"
+        app:layout_constraintStart_toStartOf="@id/privacy_info_first"
+        app:layout_constraintTop_toBottomOf="@id/privacy_info_first" />
+
+    <TextView
+        android:id="@+id/privacy_info_third"
+        style="@style/SignUpRadioTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up__privacy_info_third"
+        app:layout_constraintStart_toStartOf="@id/privacy_info_second"
+        app:layout_constraintTop_toBottomOf="@id/privacy_info_second" />
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/email_info_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@id/privacy_radio_action"
+        app:layout_constraintTop_toBottomOf="@+id/privacy_radio_action" />
+
+    <TextView
+        android:id="@+id/email_info"
+        style="@style/SignUpRadioTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up__email_info"
+        app:layout_constraintBottom_toBottomOf="@id/email_info_action"
+        app:layout_constraintStart_toEndOf="@id/email_info_action"
+        app:layout_constraintTop_toTopOf="@+id/email_info_action" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/action_signup"
+        style="@style/ButtonStyle"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="12dp"
+        android:text="@string/sign_up__signup_action"
+        app:layout_constraintBottom_toTopOf="@+id/login_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_info_action"
+        app:layout_constraintVertical_bias="0.26999998"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+    <TextView
+        android:id="@+id/account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/tee"
+        android:text="@string/sign_up__have_account"
+        android:textColor="@color/grayText"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@id/login_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/action_signup"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/tee"
+        android:text="@string/sign_up__login_action"
+        android:textColor="@color/colorSecondary"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/account_text"
+        app:layout_constraintTop_toBottomOf="@+id/action_signup"
+        tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,8 @@
 
     <string name="common__action_continue">Продолжить</string>
 
+    <string name="error_something_went_wrong">Something went wrong</string>
+
     <string name="welcome_news__skip">Пропустить</string>
     <string name="welcome_news__useful_news">Полезные новости</string>
     <string name="welcome_news__about_news">Узнавайте новости о странах, необходимые\n документы, страховка, визы, валюта</string>
@@ -15,4 +17,38 @@
     <string name="welcome_map__title">Карта ближайших мест</string>
     <string name="welcome_map__about_map">Исследуйте свое окружение и найдите скрытые\n сокровища с нашей  интерактивной картой\n местных достопримечательностей</string>
     <string name="welcome_map__action_start">Начать сейчас</string>
+
+    <string name="login__password">•••••••</string>
+    <string name="login__email">example@gmail.com</string>
+    <string name="login__auth_action">Авторизация</string>
+    <string name="login__does_not_have_account">Еще нет аккаунта?</string>
+    <string name="login__signup_action">Зарегистрироваться</string>
+
+    <string name="sign_up__registration_form">Форма регистрации</string>
+    <string name="sign_up__name_error">Пожалуйста, введите ваше имя.</string>
+    <string name="sign_up__surname_error">Пожалуйста, введите вашу фамилию.</string>
+    <string name="sign_up__name_hint">Имя</string>
+    <string name="sign_up__surname_hint">Фамилия</string>
+    <string name="sign_up__number_error">Пожалуйста, введите действительный номер телефона.</string>
+    <string name="sign_up__email_error">Пожалуйста, введите действительный адрес электронной почты.</string>
+    <string name="sign_up__email_hint">Адрес электронной почты</string>
+    <string name="sign_up__number_hint">Тел.</string>
+    <string name="sign_up__nickname_hint">Имя пользователя</string>
+    <string name="sign_up__nickname_error">Пожалуйста, введите имя пользователя.</string>
+    <string name="sign_up__password_hint">Пароль</string>
+    <string name="sign_up__password_error">Пароль не соответствует требованиям. Пожалуйста, убедитесь, \nчто пароль содержит не менее 8 символов, включая как минимум \nодну большую букву и одну цифру.</string>
+    <string name="sign_up__privacy_info_first">Я подтверждаю, что ознакомился(ась) с</string>
+    <string name="sign_up__privacy_info_second"><b> политикой конфиденциальности</b> и</string>
+    <string name="sign_up__privacy_info_third">согласен(согласна) с её условиями.</string>
+    <string name="sign_up__email_info">Я подтверждаю, что желаю получать рассылку\n по электронной почте.</string>
+    <string name="sign_up__signup_action">Зарегистрироваться</string>
+    <string name="sign_up__have_account">Уже есть аккаунт?</string>
+    <string name="sign_up__login_action">Войти</string>
+    
+    <string name="error_login__error_text">Нет аккаунта, связанного с введенным\n адресом электронной почты и\n паролем. Пожалуйста, проверьте\n данные и попробуйте еще раз или\n зарегистрируйтесь, если у вас еще нет\n аккаунта.</string>
+    <string name="error_login__ok">OK</string>
+    <string name="menu_main__home">Home</string>
+    <string name="menu_main__translator">Translator</string>
+    <string name="menu_main__map">Map</string>
+    <string name="menu_main__profile">Profile</string>>
 </resources>
