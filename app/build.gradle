@@ -50,12 +50,40 @@ dependencies {
     //firebase
     implementation 'com.google.firebase:firebase-auth:21.1.0'
     implementation 'com.google.firebase:firebase-database:19.6.0'
+    implementation 'com.google.firebase:firebase-core:15.0.2'
+    implementation 'com.google.firebase:firebase-ml-natural-language:22.0.0'
+    implementation 'com.google.firebase:firebase-ml-natural-language-translate-model:20.0.8'
 
     //DI
     implementation "io.insert-koin:koin-android:3.3.0"
 
     //viewBinding
     implementation 'com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.6'
+
+    //google map
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'com.google.maps.android:android-maps-utils:2.2.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'
+    implementation 'com.google.maps:google-maps-services:0.2.9'
+    implementation 'org.slf4j:slf4j-simple:1.7.25'
+    implementation 'com.android.volley:volley:1.2.0'
+
+    // Glide Library
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    /* Networking */
+    def retrofitVersion = "2.9.0"
+    implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava3:$retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+    // Circle ImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Blur dialog
+    implementation 'fr.tvbarthel.blurdialogfragment:lib:2.2.0'
 
     //navigation
     implementation "androidx.navigation:navigation-runtime-ktx:$navigation_version"

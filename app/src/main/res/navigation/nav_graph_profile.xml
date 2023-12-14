@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/fragmentProfile"
+    android:id="@+id/profile">
+
+    <fragment
+        android:id="@+id/fragmentProfile"
+        android:name="com.example.worldwise.presentation.screens.profile.main.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profile_to_confDialog"
+            app:destination="@id/confDialog" />
+        <action
+            android:id="@+id/action_profile_to_editPhotoDialog"
+            app:destination="@id/editPhotoDialog" />
+        <action
+            android:id="@+id/action_profile_to_helpDialog"
+            app:destination="@id/helpDialog" />
+        <action
+            android:id="@+id/action_profile_to_logoutDialog"
+            app:destination="@id/logoutDialog" />
+    </fragment>
+
+    <dialog
+        android:id="@+id/confDialog"
+        android:name="com.example.worldwise.presentation.screens.profile.confidentiality.ConfidentialityDialog"
+        android:label="dialog_conf"
+        tools:layout="@layout/dialog_confidentiality" />
+
+    <dialog
+        android:id="@+id/helpDialog"
+        android:name="com.example.worldwise.presentation.screens.profile.help.HelpDialog"
+        android:label="dialog_help"
+        tools:layout="@layout/dialog_help" />
+
+    <dialog
+        android:id="@+id/editPhotoDialog"
+        android:name="com.example.worldwise.presentation.screens.profile.editPhoto.EditPhotoDialog"
+        android:label="dialog_edit_photo"
+        tools:layout="@layout/dialog_edit_photo" />
+
+    <dialog
+        android:id="@+id/logoutDialog"
+        android:name="com.example.worldwise.presentation.screens.profile.logout.LogoutDialog"
+        android:label="dialog_logout"
+        tools:layout="@layout/dialog_logout" />
+
+</navigation>

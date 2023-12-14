@@ -27,6 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
         android:hint="@string/sign_up__name_hint"
+        android:textColorHint="@color/grayText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/title" />
@@ -49,6 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="@string/sign_up__surname_hint"
+        android:textColorHint="@color/grayText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/error_name" />
@@ -73,6 +75,7 @@
         android:layout_marginTop="10dp"
         android:hint="@string/sign_up__email_hint"
         android:inputType="textEmailAddress"
+        android:textColorHint="@color/grayText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/error_surname" />
@@ -97,6 +100,7 @@
         android:layout_marginTop="10dp"
         android:hint="@string/sign_up__number_hint"
         android:inputType="number"
+        android:textColorHint="@color/grayText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/error_email" />
@@ -120,6 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:hint="@string/sign_up__nickname_hint"
+        android:textColorHint="@color/grayText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/error_number" />
@@ -143,6 +148,7 @@
         android:layout_marginTop="10dp"
         android:hint="@string/sign_up__password_hint"
         android:inputType="textPassword"
+        android:textColorHint="@color/grayText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/error_nickname" />
@@ -164,7 +170,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
         android:buttonTint="@color/colorSecondary"
-        android:foregroundTint="@color/colorSecondary"
         app:layout_constraintStart_toStartOf="@id/edit_password"
         app:layout_constraintTop_toBottomOf="@id/error_password" />
 
@@ -195,11 +200,12 @@
         app:layout_constraintStart_toStartOf="@id/privacy_info_second"
         app:layout_constraintTop_toBottomOf="@id/privacy_info_second" />
 
-    <com.google.android.material.radiobutton.MaterialRadioButton
+    <androidx.appcompat.widget.AppCompatRadioButton
         android:id="@+id/email_info_action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:buttonTint="@color/colorSecondary"
         app:layout_constraintStart_toStartOf="@id/privacy_radio_action"
         app:layout_constraintTop_toBottomOf="@+id/privacy_radio_action" />
 

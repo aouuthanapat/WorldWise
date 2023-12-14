@@ -1,7 +1,0 @@
-<resources>
-    <!-- Base application theme. -->
-    <style name="Base.Theme.WorldWise" parent="Theme.Material3.DayNight.NoActionBar">
-
-        <item name="tabTextColor">@color/colorPrimary</item>
-    </style>
-</resources>

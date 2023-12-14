@@ -34,10 +34,13 @@ class SignUpViewModel : ViewModel() {
     private val _isValidPassword: MutableSharedFlow<Boolean> = noReply()
     val isValidPassword: Flow<Boolean> get() = _isValidPassword
 
+    private val _isCheckedPrivacy: MutableSharedFlow<Boolean> = noReply()
+    val isCheckedPrivacy: Flow<Boolean> get() = _isCheckedPrivacy
+
     val successValidations: Flow<Boolean> = combine(
-        _isValidName, _isValidSurname, _isValidEmail, _isValidNumber, _isValidNickName, _isValidPassword
-    ) { isValidName, isValidLastName, isValidEmail, isValidNumber, isValidNickName, isValidPassword ->
-        isValidName && isValidLastName && isValidEmail && isValidNumber && isValidNickName && isValidPassword
+        _isValidName, _isValidSurname, _isValidEmail, _isValidNumber, _isValidNickName, _isValidPassword, _isCheckedPrivacy
+    ) { isValidName, isValidLastName, isValidEmail, isValidNumber, isValidNickName, isValidPassword, isCheckedPrivacy ->
+        isValidName && isValidLastName && isValidEmail && isValidNumber && isValidNickName && isValidPassword && isCheckedPrivacy
     }
 
     private val _isSuccessSignUp: MutableSharedFlow<Boolean> = noReply()
@@ -50,6 +53,7 @@ class SignUpViewModel : ViewModel() {
         phone: String,
         nickName: String,
         password: String,
+        isCheckedPrivacy: Boolean,
     ) {
         viewModelScope.launch {
             _isValidName.emit(name.isNotBlank())
@@ -58,6 +62,7 @@ class SignUpViewModel : ViewModel() {
             _isValidNumber.emit(checkValidationNumber(phone))
             _isValidNickName.emit(nickName.isNotBlank())
             _isValidPassword.emit(checkValidationPassword(password))
+            _isCheckedPrivacy.emit(isCheckedPrivacy)
         }
     }
 
@@ -72,7 +77,8 @@ class SignUpViewModel : ViewModel() {
         FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
-                    val user = User(name, lastName, email, phone, nickName)
+                    val user =
+                        User(name = name, lastName = lastName, photoId = null, email = email, number = phone, nickName = nickName)
                     FirebaseDatabase.getInstance().getReference("Users")
                         .child(checkNotNull(FirebaseAuth.getInstance().currentUser?.uid))
                         .setValue(user).addOnCompleteListener { task ->

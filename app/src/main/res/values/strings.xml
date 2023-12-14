@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">POLUS</string>
 
+    <string name="api_key">AIzaSyCb5ZKiWU1R9vyiu-BdOt7HgjeqXgtgsz4</string>
+
+
     <string name="common__action_continue">Продолжить</string>
 
     <string name="error_something_went_wrong">Something went wrong</string>
@@ -18,7 +21,7 @@
     <string name="welcome_map__about_map">Исследуйте свое окружение и найдите скрытые\n сокровища с нашей  интерактивной картой\n местных достопримечательностей</string>
     <string name="welcome_map__action_start">Начать сейчас</string>
 
-    <string name="login__password">•••••••</string>
+    <string name="login__password">• • • • • • •</string>
     <string name="login__email">example@gmail.com</string>
     <string name="login__auth_action">Авторизация</string>
     <string name="login__does_not_have_account">Еще нет аккаунта?</string>
@@ -44,11 +47,59 @@
     <string name="sign_up__signup_action">Зарегистрироваться</string>
     <string name="sign_up__have_account">Уже есть аккаунт?</string>
     <string name="sign_up__login_action">Войти</string>
-    
+
     <string name="error_login__error_text">Нет аккаунта, связанного с введенным\n адресом электронной почты и\n паролем. Пожалуйста, проверьте\n данные и попробуйте еще раз или\n зарегистрируйтесь, если у вас еще нет\n аккаунта.</string>
     <string name="error_login__ok">OK</string>
     <string name="menu_main__home">Home</string>
     <string name="menu_main__translator">Translator</string>
     <string name="menu_main__map">Map</string>
-    <string name="menu_main__profile">Profile</string>>
+    <string name="menu_main__profile">Profile</string>
+
+    <string name="home__recommendations">Рекомендации</string>
+
+    <string name="translator__title">POLUS Переводчик</string>
+    <string name="translator__from_language_hint">Введите текст для перевода</string>
+    <string name="translator__translate">Перевод</string>
+    <string name="translator__say_something">Say something to translate</string>
+    <string name="translator__pending_message">Translation...</string>
+
+    <string name="profile__action_item__confidentiality">Конфиденциальность</string>
+
+    <string name="confidentiality__title_first">Политика конфиденциальности</string>
+    <string name="confidentiality__caption_first">Данная политика конфиденциальности описывает, как мы собираем, используем и защищаем вашу личную информацию при использовании нашего приложения для туристов. Мы стремимся обеспечить вашу конфиденциальность и безопасность, предоставляя вам доступ к функциям перевода, карты и новостной ленты.</string>
+    <string name="confidentiality__title_second">Собираемая информация</string>
+    <string name="confidentiality__caption_second">Мы можем собирать информацию, такую как ваше имя и адрес электронной почты, если вы регистрируетесь в нашем приложении. Для предоставления вам актуальной информации о местоположении и маршрутах, мы можем собирать данные о вашей геолокации. Мы автоматически собираем информацию о том, как вы взаимодействуете с нашим приложением, включая просмотр карты, переводы и чтение новостей.</string>
+    <string name="confidentiality__title_third">Использование информации</string>
+    <string name="confidentiality__caption_third">Предоставление вам персонализированных маршрутов на карте.\n•\nПовышение качества наших услуг и развитие новых функций.\n•\nОтправка вам актуальных новостей и уведомлений о событиях в регионах, которые вас интересуют.\n•\nОбеспечение безопасности и защиты данных пользователей.\n</string>
+    <string name="confidentiality__title_four">Защита вашей конфиденциальности</string>
+    <string name="confidentiality__caption_four">Мы принимаем меры безопасности, чтобы защитить вашу личную информацию и предотвратить ее утечку. Мы не продаем вашу информацию третьим сторонам и не используем ее в целях, не связанных с предоставлением наших услуг.\n\nМы ценим ваше доверие и стремимся делать все возможное, чтобы ваша конфиденциальность оставалась надежной при использовании нашего приложения для туристов.</string>
+
+    <string name="help__title_first">Страница Помощи</string>
+    <string name="help__caption_first">Добро пожаловать на страницу помощи приложения WorldWise! Мы заботимся о вашем комфорте и безопасности во время путешествий. Ниже вы найдете полезную информацию и советы о том, как максимально использовать наши функции.</string>
+    <string name="help__title_second">POLUS Переводчик</string>
+    <string name="help__caption_second">Как использовать переводчик: Наш интуитивно понятный переводчик позволяет вам легко переводить текст с одного языка на другой. Просто введите текст или скопируйте его, выберите язык перевода и наш переводчик автоматически переведет ваш текст.</string>
+    <string name="help__title_third">Новостная лента</string>
+    <string name="help__caption_third">Актуальные новости: Следите за актуальными новостями и событиями в регионах, которые вас интересуют. Нажмите на новость, чтобы получить подробности.</string>
+    <string name="help__title_four">Связь с нами</string>
+    <string name="help__caption_four">Если у вас возникли вопросы, предложения или проблемы с приложением, не стесняйтесь связаться с нашей службой поддержки. Мы всегда готовы помочь вам.</string>
+
+    <string name="profile__action_item__help">Помощь</string>
+    <string name="profile__action_item__edit_phono">Изменить фото профиля</string>
+    <string name="profile__action_item__logout">Выйти</string>
+    <string name="help__caption_five">Мы надеемся, что страница помощи сделает ваше путешествие более приятным и комфортным. Всегда помните, что мы здесь, чтобы обеспечить вас всей необходимой информацией и поддержкой.</string>
+    <string name="logout__title">Выйти из аккаунта?</string>
+    <string name="logout__caption">Вы действительно хотите выйти \nиз аккаунта?</string>
+    <string name="logout__submit_action">Выйти</string>
+    <string name="logout__cancel_action">Отмена</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="edit_photo__current_photo">Ваше текущее фото</string>
+    <string name="edit_photo__select_photo">Выберите фото для профиля</string>
+    <string name="home__item_news_chapter">Раздел</string>
+    <string name="home__item_news_theme">Тема</string>
+    <string name="menu_main__common">Общие</string>
+    <string name="menu_main__food">Еда</string>
+    <string name="menu_main__transport">Транспорт</string>
+    <string name="menu_main__attractions">Достопримечательности</string>
+    <string name="menu_main__security">Безопасность</string>
 </resources>

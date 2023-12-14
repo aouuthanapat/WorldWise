@@ -7,16 +7,19 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import com.example.worldwise.R
+import com.example.worldwise.presentation.activity.main.MainActivity
 import com.example.worldwise.presentation.activity.welcome.WelcomeActivity
+import com.google.firebase.auth.FirebaseAuth
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : AppCompatActivity(R.layout.activity_splash) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
-        WindowCompat.setDecorFitsSystemWindows(window, false)
-        window.statusBarColor = Color.TRANSPARENT
         Handler(mainLooper).postDelayed({
-            startActivity(Intent(this, WelcomeActivity::class.java))
+            if(FirebaseAuth.getInstance().currentUser == null) {
+                startActivity(Intent(this, WelcomeActivity::class.java))
+            } else {
+                startActivity(Intent(this, MainActivity::class.java))
+            }
         }, 1000)
     }
 }

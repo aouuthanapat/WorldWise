@@ -1,8 +1,8 @@
 <resources>
     <!-- Base application theme. -->
-    <style name="Base.Theme.WorldWise" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.WorldWise" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="tabTextColor">@color/colorPrimary</item>
+        <item name = "android:statusBarColor">?attr/colorPrimary</item>
     </style>
 
     <style name="Theme.WorldWise" parent="Base.Theme.WorldWise" />

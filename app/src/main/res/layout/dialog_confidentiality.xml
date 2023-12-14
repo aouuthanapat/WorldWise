@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="420dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/error_login_background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingHorizontal="20dp">
+
+    <ImageView
+        android:id="@+id/action_close"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:src="@drawable/ic_close" />
+
+    <TextView
+        android:id="@+id/title_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tee"
+        android:textColor="@color/colorSecondary"
+        android:textSize="14sp"
+        android:text="@string/confidentiality__title_first"/>
+
+    <TextView
+        android:id="@+id/caption_first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/just_sans_regular"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textColor="@color/darkGrayText"
+        android:text="@string/confidentiality__caption_first"
+        />
+
+    <TextView
+        android:id="@+id/title_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tee"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorSecondary"
+        android:textSize="14sp"
+        android:text="@string/confidentiality__title_second"
+        />
+
+    <TextView
+        android:id="@+id/caption_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/just_sans_regular"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textColor="@color/darkGrayText"
+        android:text="@string/confidentiality__caption_second"/>
+
+    <TextView
+        android:id="@+id/title_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tee"
+        android:textColor="@color/colorSecondary"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/confidentiality__title_third"/>
+
+    <TextView
+        android:id="@+id/caption_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/just_sans_regular"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:textColor="@color/darkGrayText"
+        android:text="@string/confidentiality__caption_third"/>
+
+    <TextView
+        android:id="@+id/title_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/tee"
+        android:textColor="@color/colorSecondary"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:text="@string/confidentiality__title_four"/>
+
+    <TextView
+        android:id="@+id/caption_four"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/just_sans_regular"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/darkGrayText"
+        android:text="@string/confidentiality__caption_four"/>
+
+</LinearLayout>

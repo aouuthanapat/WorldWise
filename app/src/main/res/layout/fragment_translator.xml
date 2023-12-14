@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingHorizontal="20dp"
+    tools:context=".presentation.screens.translator.TranslatorFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/tee"
+        android:text="@string/translator__title"
+        android:textColor="@color/colorSecondary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/bg_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/translator_spinner_background"
+        app:layout_constraintBottom_toTopOf="@id/input_from_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Spinner
+        android:id="@+id/spinner_from"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/bg_spinner"
+        app:layout_constraintStart_toStartOf="@+id/bg_spinner"
+        app:layout_constraintTop_toTopOf="@id/bg_spinner" />
+
+    <ImageView
+        android:id="@+id/action_swap"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_swap"
+        app:layout_constraintBottom_toBottomOf="@+id/bg_spinner"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_to"
+        app:layout_constraintStart_toEndOf="@+id/spinner_from"
+        app:layout_constraintTop_toTopOf="@+id/bg_spinner" />
+
+    <Spinner
+        android:id="@+id/spinner_to"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:gravity="end"
+        
+        app:layout_constraintBottom_toBottomOf="@id/bg_spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bg_spinner" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_from_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@color/colorTertiary"
+        android:gravity="top"
+        app:boxStrokeWidth="0dp"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintBottom_toTopOf="@+id/text_result"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bg_spinner"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <EditText
+            android:id="@+id/edit_from_language"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:backgroundTint="@color/colorTertiary"
+            android:fontFamily="@font/just_sans_regular"
+            android:gravity="top"
+            android:hint="@string/translator__from_language_hint"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/colorSecondary"
+            android:textColorHint="@color/colorSecondary"
+            android:textSize="12sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/action_mic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_mic"
+        app:layout_constraintBottom_toBottomOf="@id/input_from_language"
+        app:layout_constraintEnd_toEndOf="@+id/input_from_language" />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/result_translator_background"
+        android:fontFamily="@font/just_sans_regular"
+        android:padding="15dp"
+        android:text="@string/translator__translate"
+        android:textColor="@color/colorSecondary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_from_language" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

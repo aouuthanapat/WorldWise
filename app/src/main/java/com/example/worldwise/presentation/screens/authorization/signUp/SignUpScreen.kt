@@ -1,6 +1,7 @@
 package com.example.worldwise.presentation.screens.authorization.signUp
 
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -37,7 +38,8 @@ class SignUpScreen : Fragment(R.layout.fragment_sign_up) {
                 email = editEmail.text.toString(),
                 phone = editNumber.text.toString(),
                 nickName = editNickname.text.toString(),
-                password = editPassword.text.toString()
+                password = editPassword.text.toString(),
+                isCheckedPrivacy = privacyRadioAction.isChecked
             )
         }
     }
@@ -65,6 +67,23 @@ class SignUpScreen : Fragment(R.layout.fragment_sign_up) {
 
         isValidPassword.bind(viewLifecycleOwner) {
             binding.errorPassword.isVisible = !it
+        }
+
+        isCheckedPrivacy.bind(viewLifecycleOwner) {
+            if (it) {
+                binding.privacyInfoFirst.setTextColor(requireContext().getColor(R.color.colorSecondary))
+                binding.privacyInfoSecond.setTextColor(requireContext().getColor(R.color.colorSecondary))
+                binding.privacyInfoThird.setTextColor(requireContext().getColor(R.color.colorSecondary))
+                binding.privacyInfoFirst.setTextColor(requireContext().getColor(R.color.colorSecondary))
+                binding.privacyRadioAction.highlightColor =
+                    requireContext().getColor(R.color.colorSecondary)
+            } else {
+                binding.privacyRadioAction.highlightColor =
+                    requireContext().getColor(R.color.errorText)
+                binding.privacyInfoFirst.setTextColor(requireContext().getColor(R.color.errorText))
+                binding.privacyInfoSecond.setTextColor(requireContext().getColor(R.color.errorText))
+                binding.privacyInfoThird.setTextColor(requireContext().getColor(R.color.errorText))
+            }
         }
 
         successValidations.bind(viewLifecycleOwner) {

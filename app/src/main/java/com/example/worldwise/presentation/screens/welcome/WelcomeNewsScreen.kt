@@ -2,6 +2,7 @@ package com.example.worldwise.presentation.screens.welcome
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -9,6 +10,7 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.worldwise.R
 import com.example.worldwise.databinding.FragmentWelcomeNewsScreenBinding
 import com.example.worldwise.presentation.activity.auth.AuthActivity
+import com.google.firebase.auth.FirebaseAuth
 
 class WelcomeNewsScreen : Fragment(R.layout.fragment_welcome_news_screen) {
 
